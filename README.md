@@ -26,12 +26,12 @@ This script only requires the following UI library:
 
 1. Download the latest version of the script.
 2. Extract the folder into your `resources` directory.
-3. Ensure the folder is named `cinematique` (or your preferred name, but avoid capital letters).
+3. Ensure the folder is named `nexis-cinematic` (or your preferred name, but avoid capital letters).
 4. Add the following lines to your `server.cfg` file:
 
 ```cfg
 ensure ox_lib
-ensure cinematique
+ensure nexis-cinematic
 ```
 
 ## ⚙️ Configuration (ACE Permissions)
@@ -42,7 +42,7 @@ To allow your admins to use the menu, you need to add this line to your `server.
 
 ```cfg
 # Grants permission to use the cinematic script to administrators
-add_ace group.admin cinematique.admin allow
+add_ace group.admin cinematic.admin allow
 ```
 
 You can change the required ACE node and the translations directly in the `config.lua` file.
