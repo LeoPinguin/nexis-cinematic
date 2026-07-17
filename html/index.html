@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Cinematic Player</title>
+    <style>
+        body, html { 
+            margin: 0; padding: 0; 
+            width: 100%; height: 100%; 
+            overflow: hidden; 
+            background: transparent; 
+        }
+
+        /* Le conteneur principal qui agit comme un cadre strict */
+        #video-container {
+            position: absolute; 
+            top: 0; left: 0; 
+            width: 100%; height: 100%;
+            overflow: hidden; /* Coupe tout ce qui dépasse du cadre */
+            display: none;
+            background: black;
+        }
+
+        /* Le lecteur YouTube agrandi pour cacher les bords */
+        #player {
+            position: absolute; 
+            /* On centre et on grossit l'image de 20% pour pousser le titre et les logos hors de l'écran */
+            top: -15%; left: -10%; 
+            width: 120%; height: 130%; 
+            pointer-events: none; /* Bloque les clics */
+        }
+
+        /* Le rideau noir qui cache le chargement et le bouton Play rouge */
+        #loading-cover {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: black;
+            z-index: 10;
+            transition: opacity 1.5s ease-in-out; /* Effet de fondu cinématique au démarrage */
+        }
+    </style>
+</head>
+<body>
+    <div id="video-container">
+        <!-- L'Iframe YouTube se mettra ici -->
+        <div id="player"></div>
+        <!-- Notre rideau noir par-dessus -->
+        <div id="loading-cover"></div>
+    </div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
+</body>
+</html>
