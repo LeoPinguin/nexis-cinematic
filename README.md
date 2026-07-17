@@ -4,6 +4,9 @@ A complete and 100% Standalone script allowing you to broadcast YouTube videos d
 
 This script stands out with its **off-screen preloading technique**: the default YouTube interface (red Play button, video title, recommended videos) is completely hidden. Players only experience a smooth transition directly into the video, guaranteeing total immersion.
 
+## Join our discord to get some help : [DISCORD](https://discord.gg/jpeSt659Du)
+
+
 ## ✨ Features
 
 *   **100% Standalone:** Works on any framework (ESX, QBCore, vRP, or a blank server) using FiveM's native ACE permission system.
